@@ -6,7 +6,7 @@ pragma solidity 0.6.6;
 // Deployed to : 0x33F366e9cb3264138cB579C3A902dC5B39d7EcCc
 // Symbol      : DILA
 // Name        : DILA_Coin
-// Total supply: 100000000
+// Total supply: 100000000000000000000
 // Decimals    : 25
 //
 // 
