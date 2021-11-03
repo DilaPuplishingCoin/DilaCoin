@@ -1,17 +1,17 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'DiLa Coin' token contract
+// 'DilaCoin' token contract
 //
 // Deployed to : 0x33F366e9cb3264138cB579C3A902dC5B39d7EcCc
-// Symbol      : DILA
-// Name        : DILA_Coin
-// Total supply: 100000000000000000000
-// Decimals    : 25
+// Symbol      : Dila
+// Name        : DilaCoin
+// Total supply: 10000000000
+// Decimals    : 18
 //
-// 
+// Enjoy.
 //
-// (c) by Tugba Tasova based upon A. Valentine.
+// (c) by Ahiwe Onyebuchi Valentine.
 // ----------------------------------------------------------------------------
 
 
@@ -100,10 +100,10 @@ contract Owned {
 // token transfers
 // ----------------------------------------------------------------------------
 contract DilaCoin is ERC20Interface, Owned, SafeMath {
-    string public symbol;Dila
-    string public  name;Dila Coin
-    uint8 public decimals;25
-    uint public _totalSupply;100000000000000000000
+    string public symbol;
+    string public  name;
+    uint8 public decimals;
+    uint public _totalSupply;
 
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
@@ -113,10 +113,10 @@ contract DilaCoin is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "DILA";
-        name = "DILA_Coin";
-        decimals = 25;
-        _totalSupply = 100000000000000000000;
+        symbol = "Dila";
+        name = "DilaCoin";
+        decimals = 18;
+        _totalSupply = 10000000000;
         balances[0x33F366e9cb3264138cB579C3A902dC5B39d7EcCc] = _totalSupply;
         emit Transfer(address(0), 0x33F366e9cb3264138cB579C3A902dC5B39d7EcCc, _totalSupply);
     }
